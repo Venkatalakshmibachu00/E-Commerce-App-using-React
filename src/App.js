@@ -62,8 +62,6 @@ class App extends Component {
   }
 
   addCartItem = product => {
-    // this.setState(prevState => ({cartList: [...prevState.cartList, product]}))
-    //   TODO: Update the code here to implement addCartItem
     const {cartList} = this.state
     const productObject = cartList.find(
       eachCartItem => eachCartItem.id === product.id,
